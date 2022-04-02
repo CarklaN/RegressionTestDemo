@@ -1,0 +1,1412 @@
+
+REGRESSION: Valid Registration Test Case:
+  Validation of size and categories
+    check TOPS (FAILED - 1)
+    Check Dresses (FAILED - 2)
+    Check size S
+    Check size M
+    Check size L
+  Validation of color filter options
+    Check color Beige (FAILED - 3)
+    Check color White (FAILED - 4)
+    Check color Black (FAILED - 5)
+    Check color Orange (FAILED - 6)
+    Check color Blue (FAILED - 7)
+    Check color Green (FAILED - 8)
+    Check color Yellow (FAILED - 9)
+    Check color Pink (FAILED - 10)
+  Validation of composition
+    Check composition: Cotton (FAILED - 11)
+    Check composition: Polyester (FAILED - 12)
+    Check composition: Viscose (FAILED - 13)
+  Validation of styles
+    Check Styles: Casual (FAILED - 14)
+    Check Styles: Dressy (FAILED - 15)
+    Check Styles: Girly (FAILED - 16)
+  Validation of properties and availability
+    Check properties: Colorful Dress (FAILED - 17)
+    Check properties: Maxi Dress (FAILED - 18)
+    Check properties: Midi Dress (FAILED - 19)
+    Check properties: Short Dress (FAILED - 20)
+    Check properties: Short Sleeve (FAILED - 21)
+    Check Availability: In stock (FAILED - 22)
+  Validation of manufacturer and condition
+    Check manufacturer: Fashion Manufacturer (FAILED - 23)
+    Check Condition: New (FAILED - 24)
+
+Failures:
+
+  1) REGRESSION: Valid Registration Test Case: Validation of size and categories check TOPS
+     Failure/Error: expect((FilterObjects.compare(@browser)).to_i).to be(TOPS)
+
+       expected #<Integer:5> => 2
+            got #<Integer:15> => 7
+
+       Compared using equal?, which compares object identity,
+       but expected and actual are not the same object. Use
+       `expect(actual).to eq(expected)` if you don't care about
+       object identity in this example.
+     # ./spec/ProdFiltersValidation.rb:55:in `block (3 levels) in <top (required)>'
+
+  2) REGRESSION: Valid Registration Test Case: Validation of size and categories Check Dresses
+     Failure/Error: expect((FilterObjects.compare(@browser)).to_i).to be(DRESSES)
+
+       expected #<Integer:11> => 5
+            got #<Integer:15> => 7
+
+       Compared using equal?, which compares object identity,
+       but expected and actual are not the same object. Use
+       `expect(actual).to eq(expected)` if you don't care about
+       object identity in this example.
+     # ./spec/ProdFiltersValidation.rb:63:in `block (3 levels) in <top (required)>'
+
+  3) REGRESSION: Valid Registration Test Case: Validation of color filter options Check color Beige
+     Failure/Error: driver.input(id: "layered_id_attribute_group_7").click
+
+     Selenium::WebDriver::Error::WebDriverError:
+       chrome not reachable
+         (Session info: chrome=100.0.4896.60)
+     # #0 0x55a9b49767d3 <unknown>
+     # #1 0x55a9b46d251f <unknown>
+     # #2 0x55a9b46c0954 <unknown>
+     # #3 0x55a9b46c1369 <unknown>
+     # #4 0x55a9b46c3132 <unknown>
+     # #5 0x55a9b46bb486 <unknown>
+     # #6 0x55a9b46d3a82 <unknown>
+     # #7 0x55a9b4739118 <unknown>
+     # #8 0x55a9b47265a3 <unknown>
+     # #9 0x55a9b46fbddc <unknown>
+     # #10 0x55a9b46fcde5 <unknown>
+     # #11 0x55a9b49a749d <unknown>
+     # #12 0x55a9b49c060c <unknown>
+     # #13 0x55a9b49a9205 <unknown>
+     # #14 0x55a9b49c0ee5 <unknown>
+     # #15 0x55a9b499d070 <unknown>
+     # #16 0x55a9b49dc488 <unknown>
+     # #17 0x55a9b49dc60c <unknown>
+     # #18 0x55a9b49f5c6d <unknown>
+     # #19 0x7fc06086e609 <unknown>
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/response.rb:56:in `assert_ok'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/response.rb:35:in `initialize'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:83:in `new'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:83:in `create_response'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/default.rb:109:in `request'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/http_client.rb:6:in `request'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/bridge.rb:588:in `execute'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/bridge.rb:538:in `find_element_by'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/common/search_context.rb:63:in `find_element'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:70:in `locate_element'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:37:in `matching_elements'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:19:in `locate'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:770:in `locate_in_context'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:657:in `locate'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:754:in `assert_exists'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:71:in `exists?'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:146:in `block in create_proc'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:38:in `block in until'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:77:in `block in run_with_timer'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:19:in `block in wait'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:18:in `loop'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:18:in `wait'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:76:in `run_with_timer'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:37:in `until'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:110:in `wait_until'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:708:in `wait_for_exists'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:729:in `wait_for_enabled'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:856:in `check_condition'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:820:in `element_call'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:150:in `click'
+     # ./spec/elements/FilterObjects.rb:90:in `colorBeige'
+     # ./spec/ProdFiltersValidation.rb:96:in `block (3 levels) in <top (required)>'
+
+  4) REGRESSION: Valid Registration Test Case: Validation of color filter options Check color White
+     Failure/Error: driver.input(id: "layered_id_attribute_group_8").click
+
+     Selenium::WebDriver::Error::WebDriverError:
+       chrome not reachable
+         (Session info: chrome=100.0.4896.60)
+     # #0 0x55a9b49767d3 <unknown>
+     # #1 0x55a9b46d251f <unknown>
+     # #2 0x55a9b46c0954 <unknown>
+     # #3 0x55a9b46c1369 <unknown>
+     # #4 0x55a9b46c3132 <unknown>
+     # #5 0x55a9b46bb486 <unknown>
+     # #6 0x55a9b46d3a82 <unknown>
+     # #7 0x55a9b4739118 <unknown>
+     # #8 0x55a9b47265a3 <unknown>
+     # #9 0x55a9b46fbddc <unknown>
+     # #10 0x55a9b46fcde5 <unknown>
+     # #11 0x55a9b49a749d <unknown>
+     # #12 0x55a9b49c060c <unknown>
+     # #13 0x55a9b49a9205 <unknown>
+     # #14 0x55a9b49c0ee5 <unknown>
+     # #15 0x55a9b499d070 <unknown>
+     # #16 0x55a9b49dc488 <unknown>
+     # #17 0x55a9b49dc60c <unknown>
+     # #18 0x55a9b49f5c6d <unknown>
+     # #19 0x7fc06086e609 <unknown>
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/response.rb:56:in `assert_ok'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/response.rb:35:in `initialize'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:83:in `new'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:83:in `create_response'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/default.rb:109:in `request'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/http_client.rb:6:in `request'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/bridge.rb:588:in `execute'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/bridge.rb:538:in `find_element_by'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/common/search_context.rb:63:in `find_element'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:70:in `locate_element'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:37:in `matching_elements'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:19:in `locate'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:770:in `locate_in_context'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:657:in `locate'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:754:in `assert_exists'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:71:in `exists?'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:146:in `block in create_proc'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:38:in `block in until'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:77:in `block in run_with_timer'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:19:in `block in wait'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:18:in `loop'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:18:in `wait'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:76:in `run_with_timer'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:37:in `until'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:110:in `wait_until'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:708:in `wait_for_exists'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:729:in `wait_for_enabled'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:856:in `check_condition'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:820:in `element_call'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:150:in `click'
+     # ./spec/elements/FilterObjects.rb:94:in `colorWhite'
+     # ./spec/ProdFiltersValidation.rb:104:in `block (3 levels) in <top (required)>'
+
+  5) REGRESSION: Valid Registration Test Case: Validation of color filter options Check color Black
+     Failure/Error: driver.input(id: "layered_id_attribute_group_11").click
+
+     Selenium::WebDriver::Error::WebDriverError:
+       chrome not reachable
+         (Session info: chrome=100.0.4896.60)
+     # #0 0x55a9b49767d3 <unknown>
+     # #1 0x55a9b46d251f <unknown>
+     # #2 0x55a9b46c0954 <unknown>
+     # #3 0x55a9b46c1369 <unknown>
+     # #4 0x55a9b46c3132 <unknown>
+     # #5 0x55a9b46bb486 <unknown>
+     # #6 0x55a9b46d3a82 <unknown>
+     # #7 0x55a9b4739118 <unknown>
+     # #8 0x55a9b47265a3 <unknown>
+     # #9 0x55a9b46fbddc <unknown>
+     # #10 0x55a9b46fcde5 <unknown>
+     # #11 0x55a9b49a749d <unknown>
+     # #12 0x55a9b49c060c <unknown>
+     # #13 0x55a9b49a9205 <unknown>
+     # #14 0x55a9b49c0ee5 <unknown>
+     # #15 0x55a9b499d070 <unknown>
+     # #16 0x55a9b49dc488 <unknown>
+     # #17 0x55a9b49dc60c <unknown>
+     # #18 0x55a9b49f5c6d <unknown>
+     # #19 0x7fc06086e609 <unknown>
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/response.rb:56:in `assert_ok'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/response.rb:35:in `initialize'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:83:in `new'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:83:in `create_response'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/default.rb:109:in `request'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/http_client.rb:6:in `request'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/bridge.rb:588:in `execute'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/bridge.rb:538:in `find_element_by'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/common/search_context.rb:63:in `find_element'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:70:in `locate_element'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:37:in `matching_elements'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:19:in `locate'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:770:in `locate_in_context'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:657:in `locate'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:754:in `assert_exists'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:71:in `exists?'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:146:in `block in create_proc'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:38:in `block in until'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:77:in `block in run_with_timer'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:19:in `block in wait'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:18:in `loop'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:18:in `wait'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:76:in `run_with_timer'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:37:in `until'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:110:in `wait_until'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:708:in `wait_for_exists'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:729:in `wait_for_enabled'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:856:in `check_condition'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:820:in `element_call'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:150:in `click'
+     # ./spec/elements/FilterObjects.rb:98:in `colorBlack'
+     # ./spec/ProdFiltersValidation.rb:112:in `block (3 levels) in <top (required)>'
+
+  6) REGRESSION: Valid Registration Test Case: Validation of color filter options Check color Orange
+     Failure/Error: driver.input(id: "layered_id_attribute_group_13").click
+
+     Selenium::WebDriver::Error::WebDriverError:
+       chrome not reachable
+         (Session info: chrome=100.0.4896.60)
+     # #0 0x55a9b49767d3 <unknown>
+     # #1 0x55a9b46d251f <unknown>
+     # #2 0x55a9b46c0954 <unknown>
+     # #3 0x55a9b46c1369 <unknown>
+     # #4 0x55a9b46c3132 <unknown>
+     # #5 0x55a9b46bb486 <unknown>
+     # #6 0x55a9b46d3a82 <unknown>
+     # #7 0x55a9b4739118 <unknown>
+     # #8 0x55a9b47265a3 <unknown>
+     # #9 0x55a9b46fbddc <unknown>
+     # #10 0x55a9b46fcde5 <unknown>
+     # #11 0x55a9b49a749d <unknown>
+     # #12 0x55a9b49c060c <unknown>
+     # #13 0x55a9b49a9205 <unknown>
+     # #14 0x55a9b49c0ee5 <unknown>
+     # #15 0x55a9b499d070 <unknown>
+     # #16 0x55a9b49dc488 <unknown>
+     # #17 0x55a9b49dc60c <unknown>
+     # #18 0x55a9b49f5c6d <unknown>
+     # #19 0x7fc06086e609 <unknown>
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/response.rb:56:in `assert_ok'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/response.rb:35:in `initialize'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:83:in `new'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:83:in `create_response'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/default.rb:109:in `request'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/http_client.rb:6:in `request'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/bridge.rb:588:in `execute'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/bridge.rb:538:in `find_element_by'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/common/search_context.rb:63:in `find_element'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:70:in `locate_element'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:37:in `matching_elements'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:19:in `locate'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:770:in `locate_in_context'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:657:in `locate'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:754:in `assert_exists'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:71:in `exists?'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:146:in `block in create_proc'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:38:in `block in until'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:77:in `block in run_with_timer'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:19:in `block in wait'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:18:in `loop'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:18:in `wait'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:76:in `run_with_timer'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:37:in `until'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:110:in `wait_until'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:708:in `wait_for_exists'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:729:in `wait_for_enabled'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:856:in `check_condition'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:820:in `element_call'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:150:in `click'
+     # ./spec/elements/FilterObjects.rb:102:in `colorOrange'
+     # ./spec/ProdFiltersValidation.rb:120:in `block (3 levels) in <top (required)>'
+
+  7) REGRESSION: Valid Registration Test Case: Validation of color filter options Check color Blue
+     Failure/Error: driver.input(id: "layered_id_attribute_group_14").click
+
+     Selenium::WebDriver::Error::WebDriverError:
+       chrome not reachable
+         (Session info: chrome=100.0.4896.60)
+     # #0 0x55a9b49767d3 <unknown>
+     # #1 0x55a9b46d251f <unknown>
+     # #2 0x55a9b46c0954 <unknown>
+     # #3 0x55a9b46c1369 <unknown>
+     # #4 0x55a9b46c3132 <unknown>
+     # #5 0x55a9b46bb486 <unknown>
+     # #6 0x55a9b46d3a82 <unknown>
+     # #7 0x55a9b4739118 <unknown>
+     # #8 0x55a9b47265a3 <unknown>
+     # #9 0x55a9b46fbddc <unknown>
+     # #10 0x55a9b46fcde5 <unknown>
+     # #11 0x55a9b49a749d <unknown>
+     # #12 0x55a9b49c060c <unknown>
+     # #13 0x55a9b49a9205 <unknown>
+     # #14 0x55a9b49c0ee5 <unknown>
+     # #15 0x55a9b499d070 <unknown>
+     # #16 0x55a9b49dc488 <unknown>
+     # #17 0x55a9b49dc60c <unknown>
+     # #18 0x55a9b49f5c6d <unknown>
+     # #19 0x7fc06086e609 <unknown>
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/response.rb:56:in `assert_ok'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/response.rb:35:in `initialize'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:83:in `new'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:83:in `create_response'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/default.rb:109:in `request'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/http_client.rb:6:in `request'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/bridge.rb:588:in `execute'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/bridge.rb:538:in `find_element_by'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/common/search_context.rb:63:in `find_element'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:70:in `locate_element'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:37:in `matching_elements'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:19:in `locate'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:770:in `locate_in_context'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:657:in `locate'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:754:in `assert_exists'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:71:in `exists?'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:146:in `block in create_proc'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:38:in `block in until'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:77:in `block in run_with_timer'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:19:in `block in wait'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:18:in `loop'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:18:in `wait'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:76:in `run_with_timer'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:37:in `until'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:110:in `wait_until'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:708:in `wait_for_exists'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:729:in `wait_for_enabled'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:856:in `check_condition'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:820:in `element_call'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:150:in `click'
+     # ./spec/elements/FilterObjects.rb:106:in `colorBlue'
+     # ./spec/ProdFiltersValidation.rb:128:in `block (3 levels) in <top (required)>'
+
+  8) REGRESSION: Valid Registration Test Case: Validation of color filter options Check color Green
+     Failure/Error: driver.input(id: "layered_id_attribute_group_15").click
+
+     Selenium::WebDriver::Error::WebDriverError:
+       chrome not reachable
+         (Session info: chrome=100.0.4896.60)
+     # #0 0x55a9b49767d3 <unknown>
+     # #1 0x55a9b46d251f <unknown>
+     # #2 0x55a9b46c0954 <unknown>
+     # #3 0x55a9b46c1369 <unknown>
+     # #4 0x55a9b46c3132 <unknown>
+     # #5 0x55a9b46bb486 <unknown>
+     # #6 0x55a9b46d3a82 <unknown>
+     # #7 0x55a9b4739118 <unknown>
+     # #8 0x55a9b47265a3 <unknown>
+     # #9 0x55a9b46fbddc <unknown>
+     # #10 0x55a9b46fcde5 <unknown>
+     # #11 0x55a9b49a749d <unknown>
+     # #12 0x55a9b49c060c <unknown>
+     # #13 0x55a9b49a9205 <unknown>
+     # #14 0x55a9b49c0ee5 <unknown>
+     # #15 0x55a9b499d070 <unknown>
+     # #16 0x55a9b49dc488 <unknown>
+     # #17 0x55a9b49dc60c <unknown>
+     # #18 0x55a9b49f5c6d <unknown>
+     # #19 0x7fc06086e609 <unknown>
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/response.rb:56:in `assert_ok'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/response.rb:35:in `initialize'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:83:in `new'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:83:in `create_response'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/default.rb:109:in `request'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/http_client.rb:6:in `request'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/bridge.rb:588:in `execute'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/bridge.rb:538:in `find_element_by'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/common/search_context.rb:63:in `find_element'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:70:in `locate_element'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:37:in `matching_elements'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:19:in `locate'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:770:in `locate_in_context'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:657:in `locate'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:754:in `assert_exists'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:71:in `exists?'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:146:in `block in create_proc'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:38:in `block in until'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:77:in `block in run_with_timer'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:19:in `block in wait'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:18:in `loop'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:18:in `wait'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:76:in `run_with_timer'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:37:in `until'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:110:in `wait_until'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:708:in `wait_for_exists'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:729:in `wait_for_enabled'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:856:in `check_condition'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:820:in `element_call'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:150:in `click'
+     # ./spec/elements/FilterObjects.rb:110:in `colorGreen'
+     # ./spec/ProdFiltersValidation.rb:136:in `block (3 levels) in <top (required)>'
+
+  9) REGRESSION: Valid Registration Test Case: Validation of color filter options Check color Yellow
+     Failure/Error: driver.input(id: "layered_id_attribute_group_16").click
+
+     Selenium::WebDriver::Error::WebDriverError:
+       chrome not reachable
+         (Session info: chrome=100.0.4896.60)
+     # #0 0x55a9b49767d3 <unknown>
+     # #1 0x55a9b46d251f <unknown>
+     # #2 0x55a9b46c0954 <unknown>
+     # #3 0x55a9b46c1369 <unknown>
+     # #4 0x55a9b46c3132 <unknown>
+     # #5 0x55a9b46bb486 <unknown>
+     # #6 0x55a9b46d3a82 <unknown>
+     # #7 0x55a9b4739118 <unknown>
+     # #8 0x55a9b47265a3 <unknown>
+     # #9 0x55a9b46fbddc <unknown>
+     # #10 0x55a9b46fcde5 <unknown>
+     # #11 0x55a9b49a749d <unknown>
+     # #12 0x55a9b49c060c <unknown>
+     # #13 0x55a9b49a9205 <unknown>
+     # #14 0x55a9b49c0ee5 <unknown>
+     # #15 0x55a9b499d070 <unknown>
+     # #16 0x55a9b49dc488 <unknown>
+     # #17 0x55a9b49dc60c <unknown>
+     # #18 0x55a9b49f5c6d <unknown>
+     # #19 0x7fc06086e609 <unknown>
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/response.rb:56:in `assert_ok'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/response.rb:35:in `initialize'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:83:in `new'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:83:in `create_response'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/default.rb:109:in `request'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/http_client.rb:6:in `request'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/bridge.rb:588:in `execute'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/bridge.rb:538:in `find_element_by'
+     # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/common/search_context.rb:63:in `find_element'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:70:in `locate_element'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:37:in `matching_elements'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:19:in `locate'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:770:in `locate_in_context'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:657:in `locate'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:754:in `assert_exists'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:71:in `exists?'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:146:in `block in create_proc'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:38:in `block in until'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:77:in `block in run_with_timer'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:19:in `block in wait'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:18:in `loop'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:18:in `wait'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:76:in `run_with_timer'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:37:in `until'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:110:in `wait_until'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:708:in `wait_for_exists'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:729:in `wait_for_enabled'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:856:in `check_condition'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:820:in `element_call'
+     # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:150:in `click'
+     # ./spec/elements/FilterObjects.rb:114:in `colorYellow'
+     # ./spec/ProdFiltersValidation.rb:144:in `block (3 levels) in <top (required)>'
+
+  10) REGRESSION: Valid Registration Test Case: Validation of color filter options Check color Pink
+      Failure/Error: driver.input(id: "layered_id_attribute_group_24").click
+
+      Selenium::WebDriver::Error::WebDriverError:
+        chrome not reachable
+          (Session info: chrome=100.0.4896.60)
+      # #0 0x55a9b49767d3 <unknown>
+      # #1 0x55a9b46d251f <unknown>
+      # #2 0x55a9b46c0954 <unknown>
+      # #3 0x55a9b46c1369 <unknown>
+      # #4 0x55a9b46c3132 <unknown>
+      # #5 0x55a9b46bb486 <unknown>
+      # #6 0x55a9b46d3a82 <unknown>
+      # #7 0x55a9b4739118 <unknown>
+      # #8 0x55a9b47265a3 <unknown>
+      # #9 0x55a9b46fbddc <unknown>
+      # #10 0x55a9b46fcde5 <unknown>
+      # #11 0x55a9b49a749d <unknown>
+      # #12 0x55a9b49c060c <unknown>
+      # #13 0x55a9b49a9205 <unknown>
+      # #14 0x55a9b49c0ee5 <unknown>
+      # #15 0x55a9b499d070 <unknown>
+      # #16 0x55a9b49dc488 <unknown>
+      # #17 0x55a9b49dc60c <unknown>
+      # #18 0x55a9b49f5c6d <unknown>
+      # #19 0x7fc06086e609 <unknown>
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/response.rb:56:in `assert_ok'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/response.rb:35:in `initialize'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:83:in `new'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:83:in `create_response'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/default.rb:109:in `request'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/http_client.rb:6:in `request'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/bridge.rb:588:in `execute'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/bridge.rb:538:in `find_element_by'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/common/search_context.rb:63:in `find_element'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:70:in `locate_element'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:37:in `matching_elements'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:19:in `locate'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:770:in `locate_in_context'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:657:in `locate'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:754:in `assert_exists'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:71:in `exists?'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:146:in `block in create_proc'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:38:in `block in until'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:77:in `block in run_with_timer'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:19:in `block in wait'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:18:in `loop'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:18:in `wait'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:76:in `run_with_timer'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:37:in `until'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:110:in `wait_until'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:708:in `wait_for_exists'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:729:in `wait_for_enabled'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:856:in `check_condition'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:820:in `element_call'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:150:in `click'
+      # ./spec/elements/FilterObjects.rb:118:in `colorPink'
+      # ./spec/ProdFiltersValidation.rb:153:in `block (3 levels) in <top (required)>'
+
+  11) REGRESSION: Valid Registration Test Case: Validation of composition Check composition: Cotton
+      Failure/Error: driver.input(id: "layered_id_feature_5").click
+
+      Selenium::WebDriver::Error::WebDriverError:
+        chrome not reachable
+          (Session info: chrome=100.0.4896.60)
+      # #0 0x55a9b49767d3 <unknown>
+      # #1 0x55a9b46d251f <unknown>
+      # #2 0x55a9b46c0954 <unknown>
+      # #3 0x55a9b46c1369 <unknown>
+      # #4 0x55a9b46c3132 <unknown>
+      # #5 0x55a9b46bb486 <unknown>
+      # #6 0x55a9b46d3a82 <unknown>
+      # #7 0x55a9b4739118 <unknown>
+      # #8 0x55a9b47265a3 <unknown>
+      # #9 0x55a9b46fbddc <unknown>
+      # #10 0x55a9b46fcde5 <unknown>
+      # #11 0x55a9b49a749d <unknown>
+      # #12 0x55a9b49c060c <unknown>
+      # #13 0x55a9b49a9205 <unknown>
+      # #14 0x55a9b49c0ee5 <unknown>
+      # #15 0x55a9b499d070 <unknown>
+      # #16 0x55a9b49dc488 <unknown>
+      # #17 0x55a9b49dc60c <unknown>
+      # #18 0x55a9b49f5c6d <unknown>
+      # #19 0x7fc06086e609 <unknown>
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/response.rb:56:in `assert_ok'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/response.rb:35:in `initialize'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:83:in `new'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:83:in `create_response'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/default.rb:109:in `request'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/http_client.rb:6:in `request'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/bridge.rb:588:in `execute'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/bridge.rb:538:in `find_element_by'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/common/search_context.rb:63:in `find_element'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:70:in `locate_element'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:37:in `matching_elements'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:19:in `locate'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:770:in `locate_in_context'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:657:in `locate'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:754:in `assert_exists'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:71:in `exists?'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:146:in `block in create_proc'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:38:in `block in until'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:77:in `block in run_with_timer'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:19:in `block in wait'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:18:in `loop'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:18:in `wait'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:76:in `run_with_timer'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:37:in `until'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:110:in `wait_until'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:708:in `wait_for_exists'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:729:in `wait_for_enabled'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:856:in `check_condition'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:820:in `element_call'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:150:in `click'
+      # ./spec/elements/FilterObjects.rb:124:in `compCotton'
+      # ./spec/ProdFiltersValidation.rb:166:in `block (3 levels) in <top (required)>'
+
+  12) REGRESSION: Valid Registration Test Case: Validation of composition Check composition: Polyester
+      Failure/Error: driver.input(id: "layered_id_feature_1").click
+
+      Selenium::WebDriver::Error::WebDriverError:
+        chrome not reachable
+          (Session info: chrome=100.0.4896.60)
+      # #0 0x55a9b49767d3 <unknown>
+      # #1 0x55a9b46d251f <unknown>
+      # #2 0x55a9b46c0954 <unknown>
+      # #3 0x55a9b46c1369 <unknown>
+      # #4 0x55a9b46c3132 <unknown>
+      # #5 0x55a9b46bb486 <unknown>
+      # #6 0x55a9b46d3a82 <unknown>
+      # #7 0x55a9b4739118 <unknown>
+      # #8 0x55a9b47265a3 <unknown>
+      # #9 0x55a9b46fbddc <unknown>
+      # #10 0x55a9b46fcde5 <unknown>
+      # #11 0x55a9b49a749d <unknown>
+      # #12 0x55a9b49c060c <unknown>
+      # #13 0x55a9b49a9205 <unknown>
+      # #14 0x55a9b49c0ee5 <unknown>
+      # #15 0x55a9b499d070 <unknown>
+      # #16 0x55a9b49dc488 <unknown>
+      # #17 0x55a9b49dc60c <unknown>
+      # #18 0x55a9b49f5c6d <unknown>
+      # #19 0x7fc06086e609 <unknown>
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/response.rb:56:in `assert_ok'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/response.rb:35:in `initialize'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:83:in `new'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:83:in `create_response'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/default.rb:109:in `request'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/http_client.rb:6:in `request'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/bridge.rb:588:in `execute'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/bridge.rb:538:in `find_element_by'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/common/search_context.rb:63:in `find_element'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:70:in `locate_element'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:37:in `matching_elements'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:19:in `locate'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:770:in `locate_in_context'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:657:in `locate'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:754:in `assert_exists'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:71:in `exists?'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:146:in `block in create_proc'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:38:in `block in until'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:77:in `block in run_with_timer'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:19:in `block in wait'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:18:in `loop'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:18:in `wait'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:76:in `run_with_timer'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:37:in `until'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:110:in `wait_until'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:708:in `wait_for_exists'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:729:in `wait_for_enabled'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:856:in `check_condition'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:820:in `element_call'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:150:in `click'
+      # ./spec/elements/FilterObjects.rb:128:in `compPolyester'
+      # ./spec/ProdFiltersValidation.rb:174:in `block (3 levels) in <top (required)>'
+
+  13) REGRESSION: Valid Registration Test Case: Validation of composition Check composition: Viscose
+      Failure/Error: driver.input(id: "layered_id_feature_3").click
+
+      Selenium::WebDriver::Error::WebDriverError:
+        chrome not reachable
+          (Session info: chrome=100.0.4896.60)
+      # #0 0x55a9b49767d3 <unknown>
+      # #1 0x55a9b46d251f <unknown>
+      # #2 0x55a9b46c0954 <unknown>
+      # #3 0x55a9b46c1369 <unknown>
+      # #4 0x55a9b46c3132 <unknown>
+      # #5 0x55a9b46bb486 <unknown>
+      # #6 0x55a9b46d3a82 <unknown>
+      # #7 0x55a9b4739118 <unknown>
+      # #8 0x55a9b47265a3 <unknown>
+      # #9 0x55a9b46fbddc <unknown>
+      # #10 0x55a9b46fcde5 <unknown>
+      # #11 0x55a9b49a749d <unknown>
+      # #12 0x55a9b49c060c <unknown>
+      # #13 0x55a9b49a9205 <unknown>
+      # #14 0x55a9b49c0ee5 <unknown>
+      # #15 0x55a9b499d070 <unknown>
+      # #16 0x55a9b49dc488 <unknown>
+      # #17 0x55a9b49dc60c <unknown>
+      # #18 0x55a9b49f5c6d <unknown>
+      # #19 0x7fc06086e609 <unknown>
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/response.rb:56:in `assert_ok'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/response.rb:35:in `initialize'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:83:in `new'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:83:in `create_response'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/default.rb:109:in `request'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/http_client.rb:6:in `request'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/bridge.rb:588:in `execute'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/bridge.rb:538:in `find_element_by'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/common/search_context.rb:63:in `find_element'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:70:in `locate_element'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:37:in `matching_elements'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:19:in `locate'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:770:in `locate_in_context'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:657:in `locate'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:754:in `assert_exists'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:71:in `exists?'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:146:in `block in create_proc'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:38:in `block in until'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:77:in `block in run_with_timer'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:19:in `block in wait'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:18:in `loop'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:18:in `wait'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:76:in `run_with_timer'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:37:in `until'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:110:in `wait_until'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:708:in `wait_for_exists'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:729:in `wait_for_enabled'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:856:in `check_condition'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:820:in `element_call'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:150:in `click'
+      # ./spec/elements/FilterObjects.rb:132:in `compViscose'
+      # ./spec/ProdFiltersValidation.rb:182:in `block (3 levels) in <top (required)>'
+
+  14) REGRESSION: Valid Registration Test Case: Validation of styles Check Styles: Casual
+      Failure/Error: driver.input(id: "layered_id_feature_11").click
+
+      Selenium::WebDriver::Error::WebDriverError:
+        chrome not reachable
+          (Session info: chrome=100.0.4896.60)
+      # #0 0x55a9b49767d3 <unknown>
+      # #1 0x55a9b46d251f <unknown>
+      # #2 0x55a9b46c0954 <unknown>
+      # #3 0x55a9b46c1369 <unknown>
+      # #4 0x55a9b46c3132 <unknown>
+      # #5 0x55a9b46bb486 <unknown>
+      # #6 0x55a9b46d3a82 <unknown>
+      # #7 0x55a9b4739118 <unknown>
+      # #8 0x55a9b47265a3 <unknown>
+      # #9 0x55a9b46fbddc <unknown>
+      # #10 0x55a9b46fcde5 <unknown>
+      # #11 0x55a9b49a749d <unknown>
+      # #12 0x55a9b49c060c <unknown>
+      # #13 0x55a9b49a9205 <unknown>
+      # #14 0x55a9b49c0ee5 <unknown>
+      # #15 0x55a9b499d070 <unknown>
+      # #16 0x55a9b49dc488 <unknown>
+      # #17 0x55a9b49dc60c <unknown>
+      # #18 0x55a9b49f5c6d <unknown>
+      # #19 0x7fc06086e609 <unknown>
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/response.rb:56:in `assert_ok'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/response.rb:35:in `initialize'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:83:in `new'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:83:in `create_response'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/default.rb:109:in `request'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/http_client.rb:6:in `request'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/bridge.rb:588:in `execute'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/bridge.rb:538:in `find_element_by'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/common/search_context.rb:63:in `find_element'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:70:in `locate_element'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:37:in `matching_elements'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:19:in `locate'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:770:in `locate_in_context'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:657:in `locate'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:754:in `assert_exists'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:71:in `exists?'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:146:in `block in create_proc'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:38:in `block in until'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:77:in `block in run_with_timer'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:19:in `block in wait'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:18:in `loop'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:18:in `wait'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:76:in `run_with_timer'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:37:in `until'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:110:in `wait_until'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:708:in `wait_for_exists'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:729:in `wait_for_enabled'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:856:in `check_condition'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:820:in `element_call'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:150:in `click'
+      # ./spec/elements/FilterObjects.rb:138:in `styleCasual'
+      # ./spec/ProdFiltersValidation.rb:194:in `block (3 levels) in <top (required)>'
+
+  15) REGRESSION: Valid Registration Test Case: Validation of styles Check Styles: Dressy
+      Failure/Error: driver.input(id: "layered_id_feature_16").click
+
+      Selenium::WebDriver::Error::WebDriverError:
+        chrome not reachable
+          (Session info: chrome=100.0.4896.60)
+      # #0 0x55a9b49767d3 <unknown>
+      # #1 0x55a9b46d251f <unknown>
+      # #2 0x55a9b46c0954 <unknown>
+      # #3 0x55a9b46c1369 <unknown>
+      # #4 0x55a9b46c3132 <unknown>
+      # #5 0x55a9b46bb486 <unknown>
+      # #6 0x55a9b46d3a82 <unknown>
+      # #7 0x55a9b4739118 <unknown>
+      # #8 0x55a9b47265a3 <unknown>
+      # #9 0x55a9b46fbddc <unknown>
+      # #10 0x55a9b46fcde5 <unknown>
+      # #11 0x55a9b49a749d <unknown>
+      # #12 0x55a9b49c060c <unknown>
+      # #13 0x55a9b49a9205 <unknown>
+      # #14 0x55a9b49c0ee5 <unknown>
+      # #15 0x55a9b499d070 <unknown>
+      # #16 0x55a9b49dc488 <unknown>
+      # #17 0x55a9b49dc60c <unknown>
+      # #18 0x55a9b49f5c6d <unknown>
+      # #19 0x7fc06086e609 <unknown>
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/response.rb:56:in `assert_ok'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/response.rb:35:in `initialize'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:83:in `new'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:83:in `create_response'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/default.rb:109:in `request'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/http_client.rb:6:in `request'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/bridge.rb:588:in `execute'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/bridge.rb:538:in `find_element_by'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/common/search_context.rb:63:in `find_element'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:70:in `locate_element'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:37:in `matching_elements'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:19:in `locate'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:770:in `locate_in_context'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:657:in `locate'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:754:in `assert_exists'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:71:in `exists?'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:146:in `block in create_proc'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:38:in `block in until'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:77:in `block in run_with_timer'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:19:in `block in wait'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:18:in `loop'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:18:in `wait'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:76:in `run_with_timer'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:37:in `until'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:110:in `wait_until'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:708:in `wait_for_exists'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:729:in `wait_for_enabled'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:856:in `check_condition'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:820:in `element_call'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:150:in `click'
+      # ./spec/elements/FilterObjects.rb:142:in `styleDressy'
+      # ./spec/ProdFiltersValidation.rb:201:in `block (3 levels) in <top (required)>'
+
+  16) REGRESSION: Valid Registration Test Case: Validation of styles Check Styles: Girly
+      Failure/Error: driver.input(id: "layered_id_feature_13").click
+
+      Selenium::WebDriver::Error::WebDriverError:
+        chrome not reachable
+          (Session info: chrome=100.0.4896.60)
+      # #0 0x55a9b49767d3 <unknown>
+      # #1 0x55a9b46d251f <unknown>
+      # #2 0x55a9b46c0954 <unknown>
+      # #3 0x55a9b46c1369 <unknown>
+      # #4 0x55a9b46c3132 <unknown>
+      # #5 0x55a9b46bb486 <unknown>
+      # #6 0x55a9b46d3a82 <unknown>
+      # #7 0x55a9b4739118 <unknown>
+      # #8 0x55a9b47265a3 <unknown>
+      # #9 0x55a9b46fbddc <unknown>
+      # #10 0x55a9b46fcde5 <unknown>
+      # #11 0x55a9b49a749d <unknown>
+      # #12 0x55a9b49c060c <unknown>
+      # #13 0x55a9b49a9205 <unknown>
+      # #14 0x55a9b49c0ee5 <unknown>
+      # #15 0x55a9b499d070 <unknown>
+      # #16 0x55a9b49dc488 <unknown>
+      # #17 0x55a9b49dc60c <unknown>
+      # #18 0x55a9b49f5c6d <unknown>
+      # #19 0x7fc06086e609 <unknown>
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/response.rb:56:in `assert_ok'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/response.rb:35:in `initialize'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:83:in `new'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:83:in `create_response'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/default.rb:109:in `request'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/http_client.rb:6:in `request'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/bridge.rb:588:in `execute'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/bridge.rb:538:in `find_element_by'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/common/search_context.rb:63:in `find_element'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:70:in `locate_element'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:37:in `matching_elements'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:19:in `locate'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:770:in `locate_in_context'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:657:in `locate'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:754:in `assert_exists'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:71:in `exists?'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:146:in `block in create_proc'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:38:in `block in until'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:77:in `block in run_with_timer'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:19:in `block in wait'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:18:in `loop'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:18:in `wait'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:76:in `run_with_timer'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:37:in `until'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:110:in `wait_until'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:708:in `wait_for_exists'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:729:in `wait_for_enabled'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:856:in `check_condition'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:820:in `element_call'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:150:in `click'
+      # ./spec/elements/FilterObjects.rb:146:in `styleGirly'
+      # ./spec/ProdFiltersValidation.rb:208:in `block (3 levels) in <top (required)>'
+
+  17) REGRESSION: Valid Registration Test Case: Validation of properties and availability Check properties: Colorful Dress
+      Failure/Error: driver.a(title: "Women").click
+
+      Selenium::WebDriver::Error::WebDriverError:
+        chrome not reachable
+          (Session info: chrome=100.0.4896.60)
+      # #0 0x55a9b49767d3 <unknown>
+      # #1 0x55a9b46d251f <unknown>
+      # #2 0x55a9b46c0954 <unknown>
+      # #3 0x55a9b46c1369 <unknown>
+      # #4 0x55a9b46c3132 <unknown>
+      # #5 0x55a9b46bb486 <unknown>
+      # #6 0x55a9b46d3a82 <unknown>
+      # #7 0x55a9b4739118 <unknown>
+      # #8 0x55a9b47265a3 <unknown>
+      # #9 0x55a9b46fbddc <unknown>
+      # #10 0x55a9b46fcde5 <unknown>
+      # #11 0x55a9b49a749d <unknown>
+      # #12 0x55a9b49c060c <unknown>
+      # #13 0x55a9b49a9205 <unknown>
+      # #14 0x55a9b49c0ee5 <unknown>
+      # #15 0x55a9b499d070 <unknown>
+      # #16 0x55a9b49dc488 <unknown>
+      # #17 0x55a9b49dc60c <unknown>
+      # #18 0x55a9b49f5c6d <unknown>
+      # #19 0x7fc06086e609 <unknown>
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/response.rb:56:in `assert_ok'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/response.rb:35:in `initialize'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:83:in `new'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:83:in `create_response'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/default.rb:109:in `request'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/http_client.rb:6:in `request'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/bridge.rb:588:in `execute'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/bridge.rb:538:in `find_element_by'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/common/search_context.rb:63:in `find_element'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:70:in `locate_element'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:37:in `matching_elements'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:19:in `locate'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:770:in `locate_in_context'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:657:in `locate'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:754:in `assert_exists'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:71:in `exists?'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:146:in `block in create_proc'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:38:in `block in until'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:77:in `block in run_with_timer'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:19:in `block in wait'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:18:in `loop'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:18:in `wait'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:76:in `run_with_timer'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:37:in `until'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:110:in `wait_until'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:708:in `wait_for_exists'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:729:in `wait_for_enabled'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:856:in `check_condition'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:820:in `element_call'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:150:in `click'
+      # ./spec/elements/FilterObjects.rb:4:in `startPage'
+      # ./spec/ProdFiltersValidation.rb:220:in `block (3 levels) in <top (required)>'
+
+  18) REGRESSION: Valid Registration Test Case: Validation of properties and availability Check properties: Maxi Dress
+      Failure/Error: driver.input(id: "layered_id_feature_21").click
+
+      Selenium::WebDriver::Error::WebDriverError:
+        chrome not reachable
+          (Session info: chrome=100.0.4896.60)
+      # #0 0x55a9b49767d3 <unknown>
+      # #1 0x55a9b46d251f <unknown>
+      # #2 0x55a9b46c0954 <unknown>
+      # #3 0x55a9b46c1369 <unknown>
+      # #4 0x55a9b46c3132 <unknown>
+      # #5 0x55a9b46bb486 <unknown>
+      # #6 0x55a9b46d3a82 <unknown>
+      # #7 0x55a9b4739118 <unknown>
+      # #8 0x55a9b47265a3 <unknown>
+      # #9 0x55a9b46fbddc <unknown>
+      # #10 0x55a9b46fcde5 <unknown>
+      # #11 0x55a9b49a749d <unknown>
+      # #12 0x55a9b49c060c <unknown>
+      # #13 0x55a9b49a9205 <unknown>
+      # #14 0x55a9b49c0ee5 <unknown>
+      # #15 0x55a9b499d070 <unknown>
+      # #16 0x55a9b49dc488 <unknown>
+      # #17 0x55a9b49dc60c <unknown>
+      # #18 0x55a9b49f5c6d <unknown>
+      # #19 0x7fc06086e609 <unknown>
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/response.rb:56:in `assert_ok'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/response.rb:35:in `initialize'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:83:in `new'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:83:in `create_response'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/default.rb:109:in `request'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/http_client.rb:6:in `request'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/bridge.rb:588:in `execute'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/bridge.rb:538:in `find_element_by'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/common/search_context.rb:63:in `find_element'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:70:in `locate_element'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:37:in `matching_elements'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:19:in `locate'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:770:in `locate_in_context'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:657:in `locate'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:754:in `assert_exists'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:71:in `exists?'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:146:in `block in create_proc'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:38:in `block in until'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:77:in `block in run_with_timer'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:19:in `block in wait'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:18:in `loop'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:18:in `wait'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:76:in `run_with_timer'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:37:in `until'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:110:in `wait_until'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:708:in `wait_for_exists'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:729:in `wait_for_enabled'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:856:in `check_condition'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:820:in `element_call'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:150:in `click'
+      # ./spec/elements/FilterObjects.rb:156:in `maxiDress'
+      # ./spec/ProdFiltersValidation.rb:230:in `block (3 levels) in <top (required)>'
+
+  19) REGRESSION: Valid Registration Test Case: Validation of properties and availability Check properties: Midi Dress
+      Failure/Error: driver.input(id: "layered_id_feature_20").click
+
+      Selenium::WebDriver::Error::WebDriverError:
+        chrome not reachable
+          (Session info: chrome=100.0.4896.60)
+      # #0 0x55a9b49767d3 <unknown>
+      # #1 0x55a9b46d251f <unknown>
+      # #2 0x55a9b46c0954 <unknown>
+      # #3 0x55a9b46c1369 <unknown>
+      # #4 0x55a9b46c3132 <unknown>
+      # #5 0x55a9b46bb486 <unknown>
+      # #6 0x55a9b46d3a82 <unknown>
+      # #7 0x55a9b4739118 <unknown>
+      # #8 0x55a9b47265a3 <unknown>
+      # #9 0x55a9b46fbddc <unknown>
+      # #10 0x55a9b46fcde5 <unknown>
+      # #11 0x55a9b49a749d <unknown>
+      # #12 0x55a9b49c060c <unknown>
+      # #13 0x55a9b49a9205 <unknown>
+      # #14 0x55a9b49c0ee5 <unknown>
+      # #15 0x55a9b499d070 <unknown>
+      # #16 0x55a9b49dc488 <unknown>
+      # #17 0x55a9b49dc60c <unknown>
+      # #18 0x55a9b49f5c6d <unknown>
+      # #19 0x7fc06086e609 <unknown>
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/response.rb:56:in `assert_ok'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/response.rb:35:in `initialize'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:83:in `new'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:83:in `create_response'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/default.rb:109:in `request'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/http_client.rb:6:in `request'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/bridge.rb:588:in `execute'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/bridge.rb:538:in `find_element_by'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/common/search_context.rb:63:in `find_element'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:70:in `locate_element'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:37:in `matching_elements'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:19:in `locate'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:770:in `locate_in_context'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:657:in `locate'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:754:in `assert_exists'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:71:in `exists?'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:146:in `block in create_proc'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:38:in `block in until'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:77:in `block in run_with_timer'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:19:in `block in wait'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:18:in `loop'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:18:in `wait'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:76:in `run_with_timer'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:37:in `until'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:110:in `wait_until'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:708:in `wait_for_exists'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:729:in `wait_for_enabled'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:856:in `check_condition'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:820:in `element_call'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:150:in `click'
+      # ./spec/elements/FilterObjects.rb:160:in `midiDress'
+      # ./spec/ProdFiltersValidation.rb:238:in `block (3 levels) in <top (required)>'
+
+  20) REGRESSION: Valid Registration Test Case: Validation of properties and availability Check properties: Short Dress
+      Failure/Error: driver.input(id: "layered_id_feature_19").click
+
+      Selenium::WebDriver::Error::WebDriverError:
+        chrome not reachable
+          (Session info: chrome=100.0.4896.60)
+      # #0 0x55a9b49767d3 <unknown>
+      # #1 0x55a9b46d251f <unknown>
+      # #2 0x55a9b46c0954 <unknown>
+      # #3 0x55a9b46c1369 <unknown>
+      # #4 0x55a9b46c3132 <unknown>
+      # #5 0x55a9b46bb486 <unknown>
+      # #6 0x55a9b46d3a82 <unknown>
+      # #7 0x55a9b4739118 <unknown>
+      # #8 0x55a9b47265a3 <unknown>
+      # #9 0x55a9b46fbddc <unknown>
+      # #10 0x55a9b46fcde5 <unknown>
+      # #11 0x55a9b49a749d <unknown>
+      # #12 0x55a9b49c060c <unknown>
+      # #13 0x55a9b49a9205 <unknown>
+      # #14 0x55a9b49c0ee5 <unknown>
+      # #15 0x55a9b499d070 <unknown>
+      # #16 0x55a9b49dc488 <unknown>
+      # #17 0x55a9b49dc60c <unknown>
+      # #18 0x55a9b49f5c6d <unknown>
+      # #19 0x7fc06086e609 <unknown>
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/response.rb:56:in `assert_ok'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/response.rb:35:in `initialize'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:83:in `new'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:83:in `create_response'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/default.rb:109:in `request'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/http_client.rb:6:in `request'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/bridge.rb:588:in `execute'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/bridge.rb:538:in `find_element_by'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/common/search_context.rb:63:in `find_element'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:70:in `locate_element'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:37:in `matching_elements'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:19:in `locate'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:770:in `locate_in_context'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:657:in `locate'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:754:in `assert_exists'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:71:in `exists?'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:146:in `block in create_proc'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:38:in `block in until'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:77:in `block in run_with_timer'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:19:in `block in wait'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:18:in `loop'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:18:in `wait'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:76:in `run_with_timer'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:37:in `until'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:110:in `wait_until'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:708:in `wait_for_exists'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:729:in `wait_for_enabled'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:856:in `check_condition'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:820:in `element_call'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:150:in `click'
+      # ./spec/elements/FilterObjects.rb:164:in `shortDress'
+      # ./spec/ProdFiltersValidation.rb:246:in `block (3 levels) in <top (required)>'
+
+  21) REGRESSION: Valid Registration Test Case: Validation of properties and availability Check properties: Short Sleeve
+      Failure/Error: driver.input(id: "layered_id_feature_17").click
+
+      Selenium::WebDriver::Error::WebDriverError:
+        chrome not reachable
+          (Session info: chrome=100.0.4896.60)
+      # #0 0x55a9b49767d3 <unknown>
+      # #1 0x55a9b46d251f <unknown>
+      # #2 0x55a9b46c0954 <unknown>
+      # #3 0x55a9b46c1369 <unknown>
+      # #4 0x55a9b46c3132 <unknown>
+      # #5 0x55a9b46bb486 <unknown>
+      # #6 0x55a9b46d3a82 <unknown>
+      # #7 0x55a9b4739118 <unknown>
+      # #8 0x55a9b47265a3 <unknown>
+      # #9 0x55a9b46fbddc <unknown>
+      # #10 0x55a9b46fcde5 <unknown>
+      # #11 0x55a9b49a749d <unknown>
+      # #12 0x55a9b49c060c <unknown>
+      # #13 0x55a9b49a9205 <unknown>
+      # #14 0x55a9b49c0ee5 <unknown>
+      # #15 0x55a9b499d070 <unknown>
+      # #16 0x55a9b49dc488 <unknown>
+      # #17 0x55a9b49dc60c <unknown>
+      # #18 0x55a9b49f5c6d <unknown>
+      # #19 0x7fc06086e609 <unknown>
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/response.rb:56:in `assert_ok'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/response.rb:35:in `initialize'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:83:in `new'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:83:in `create_response'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/default.rb:109:in `request'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/http_client.rb:6:in `request'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/bridge.rb:588:in `execute'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/bridge.rb:538:in `find_element_by'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/common/search_context.rb:63:in `find_element'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:70:in `locate_element'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:37:in `matching_elements'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:19:in `locate'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:770:in `locate_in_context'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:657:in `locate'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:754:in `assert_exists'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:71:in `exists?'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:146:in `block in create_proc'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:38:in `block in until'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:77:in `block in run_with_timer'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:19:in `block in wait'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:18:in `loop'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:18:in `wait'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:76:in `run_with_timer'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:37:in `until'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:110:in `wait_until'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:708:in `wait_for_exists'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:729:in `wait_for_enabled'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:856:in `check_condition'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:820:in `element_call'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:150:in `click'
+      # ./spec/elements/FilterObjects.rb:168:in `shortSleeve'
+      # ./spec/ProdFiltersValidation.rb:253:in `block (3 levels) in <top (required)>'
+
+  22) REGRESSION: Valid Registration Test Case: Validation of properties and availability Check Availability: In stock
+      Failure/Error: driver.input(id: "layered_quantity_1").click
+
+      Selenium::WebDriver::Error::WebDriverError:
+        chrome not reachable
+          (Session info: chrome=100.0.4896.60)
+      # #0 0x55a9b49767d3 <unknown>
+      # #1 0x55a9b46d251f <unknown>
+      # #2 0x55a9b46c0954 <unknown>
+      # #3 0x55a9b46c1369 <unknown>
+      # #4 0x55a9b46c3132 <unknown>
+      # #5 0x55a9b46bb486 <unknown>
+      # #6 0x55a9b46d3a82 <unknown>
+      # #7 0x55a9b4739118 <unknown>
+      # #8 0x55a9b47265a3 <unknown>
+      # #9 0x55a9b46fbddc <unknown>
+      # #10 0x55a9b46fcde5 <unknown>
+      # #11 0x55a9b49a749d <unknown>
+      # #12 0x55a9b49c060c <unknown>
+      # #13 0x55a9b49a9205 <unknown>
+      # #14 0x55a9b49c0ee5 <unknown>
+      # #15 0x55a9b499d070 <unknown>
+      # #16 0x55a9b49dc488 <unknown>
+      # #17 0x55a9b49dc60c <unknown>
+      # #18 0x55a9b49f5c6d <unknown>
+      # #19 0x7fc06086e609 <unknown>
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/response.rb:56:in `assert_ok'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/response.rb:35:in `initialize'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:83:in `new'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:83:in `create_response'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/default.rb:109:in `request'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/http_client.rb:6:in `request'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/bridge.rb:588:in `execute'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/bridge.rb:538:in `find_element_by'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/common/search_context.rb:63:in `find_element'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:70:in `locate_element'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:37:in `matching_elements'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:19:in `locate'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:770:in `locate_in_context'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:657:in `locate'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:754:in `assert_exists'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:71:in `exists?'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:146:in `block in create_proc'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:38:in `block in until'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:77:in `block in run_with_timer'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:19:in `block in wait'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:18:in `loop'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:18:in `wait'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:76:in `run_with_timer'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:37:in `until'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:110:in `wait_until'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:708:in `wait_for_exists'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:729:in `wait_for_enabled'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:856:in `check_condition'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:820:in `element_call'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:150:in `click'
+      # ./spec/elements/FilterObjects.rb:174:in `inStock'
+      # ./spec/ProdFiltersValidation.rb:261:in `block (3 levels) in <top (required)>'
+
+  23) REGRESSION: Valid Registration Test Case: Validation of manufacturer and condition Check manufacturer: Fashion Manufacturer
+      Failure/Error: driver.a(title: "Women").click
+
+      Selenium::WebDriver::Error::WebDriverError:
+        chrome not reachable
+          (Session info: chrome=100.0.4896.60)
+      # #0 0x55a9b49767d3 <unknown>
+      # #1 0x55a9b46d251f <unknown>
+      # #2 0x55a9b46c0954 <unknown>
+      # #3 0x55a9b46c1369 <unknown>
+      # #4 0x55a9b46c3132 <unknown>
+      # #5 0x55a9b46bb486 <unknown>
+      # #6 0x55a9b46d3a82 <unknown>
+      # #7 0x55a9b4739118 <unknown>
+      # #8 0x55a9b47265a3 <unknown>
+      # #9 0x55a9b46fbddc <unknown>
+      # #10 0x55a9b46fcde5 <unknown>
+      # #11 0x55a9b49a749d <unknown>
+      # #12 0x55a9b49c060c <unknown>
+      # #13 0x55a9b49a9205 <unknown>
+      # #14 0x55a9b49c0ee5 <unknown>
+      # #15 0x55a9b499d070 <unknown>
+      # #16 0x55a9b49dc488 <unknown>
+      # #17 0x55a9b49dc60c <unknown>
+      # #18 0x55a9b49f5c6d <unknown>
+      # #19 0x7fc06086e609 <unknown>
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/response.rb:56:in `assert_ok'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/response.rb:35:in `initialize'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:83:in `new'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:83:in `create_response'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/default.rb:109:in `request'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/http_client.rb:6:in `request'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/bridge.rb:588:in `execute'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/bridge.rb:538:in `find_element_by'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/common/search_context.rb:63:in `find_element'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:70:in `locate_element'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:37:in `matching_elements'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:19:in `locate'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:770:in `locate_in_context'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:657:in `locate'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:754:in `assert_exists'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:71:in `exists?'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:146:in `block in create_proc'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:38:in `block in until'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:77:in `block in run_with_timer'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:19:in `block in wait'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:18:in `loop'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:18:in `wait'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:76:in `run_with_timer'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:37:in `until'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:110:in `wait_until'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:708:in `wait_for_exists'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:729:in `wait_for_enabled'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:856:in `check_condition'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:820:in `element_call'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:150:in `click'
+      # ./spec/elements/FilterObjects.rb:4:in `startPage'
+      # ./spec/ProdFiltersValidation.rb:273:in `block (3 levels) in <top (required)>'
+
+  24) REGRESSION: Valid Registration Test Case: Validation of manufacturer and condition Check Condition: New
+      Failure/Error: driver.a(title: "Women").click
+
+      Selenium::WebDriver::Error::WebDriverError:
+        chrome not reachable
+          (Session info: chrome=100.0.4896.60)
+      # #0 0x55a9b49767d3 <unknown>
+      # #1 0x55a9b46d251f <unknown>
+      # #2 0x55a9b46c0954 <unknown>
+      # #3 0x55a9b46c1369 <unknown>
+      # #4 0x55a9b46c3132 <unknown>
+      # #5 0x55a9b46bb486 <unknown>
+      # #6 0x55a9b46d3a82 <unknown>
+      # #7 0x55a9b4739118 <unknown>
+      # #8 0x55a9b47265a3 <unknown>
+      # #9 0x55a9b46fbddc <unknown>
+      # #10 0x55a9b46fcde5 <unknown>
+      # #11 0x55a9b49a749d <unknown>
+      # #12 0x55a9b49c060c <unknown>
+      # #13 0x55a9b49a9205 <unknown>
+      # #14 0x55a9b49c0ee5 <unknown>
+      # #15 0x55a9b499d070 <unknown>
+      # #16 0x55a9b49dc488 <unknown>
+      # #17 0x55a9b49dc60c <unknown>
+      # #18 0x55a9b49f5c6d <unknown>
+      # #19 0x7fc06086e609 <unknown>
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/response.rb:56:in `assert_ok'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/response.rb:35:in `initialize'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:83:in `new'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:83:in `create_response'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/default.rb:109:in `request'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/http_client.rb:6:in `request'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/bridge.rb:588:in `execute'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/remote/bridge.rb:538:in `find_element_by'
+      # /var/lib/gems/2.7.0/gems/selenium-webdriver-4.1.0/lib/selenium/webdriver/common/search_context.rb:63:in `find_element'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:70:in `locate_element'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:37:in `matching_elements'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/locators/element/locator.rb:19:in `locate'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:770:in `locate_in_context'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:657:in `locate'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:754:in `assert_exists'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:71:in `exists?'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:146:in `block in create_proc'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:38:in `block in until'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:77:in `block in run_with_timer'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:19:in `block in wait'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:18:in `loop'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait/timer.rb:18:in `wait'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:76:in `run_with_timer'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:37:in `until'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/wait.rb:110:in `wait_until'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:708:in `wait_for_exists'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:729:in `wait_for_enabled'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:856:in `check_condition'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:820:in `element_call'
+      # /var/lib/gems/2.7.0/gems/watir-7.1.0/lib/watir/elements/element.rb:150:in `click'
+      # ./spec/elements/FilterObjects.rb:4:in `startPage'
+      # ./spec/ProdFiltersValidation.rb:283:in `block (3 levels) in <top (required)>'
+
+Finished in 37.98 seconds (files took 0.3199 seconds to load)
+27 examples, 24 failures
+
+Failed examples:
+
+rspec ./spec/ProdFiltersValidation.rb:52 # REGRESSION: Valid Registration Test Case: Validation of size and categories check TOPS
+rspec ./spec/ProdFiltersValidation.rb:60 # REGRESSION: Valid Registration Test Case: Validation of size and categories Check Dresses
+rspec ./spec/ProdFiltersValidation.rb:95 # REGRESSION: Valid Registration Test Case: Validation of color filter options Check color Beige
+rspec ./spec/ProdFiltersValidation.rb:103 # REGRESSION: Valid Registration Test Case: Validation of color filter options Check color White
+rspec ./spec/ProdFiltersValidation.rb:111 # REGRESSION: Valid Registration Test Case: Validation of color filter options Check color Black
+rspec ./spec/ProdFiltersValidation.rb:119 # REGRESSION: Valid Registration Test Case: Validation of color filter options Check color Orange
+rspec ./spec/ProdFiltersValidation.rb:127 # REGRESSION: Valid Registration Test Case: Validation of color filter options Check color Blue
+rspec ./spec/ProdFiltersValidation.rb:135 # REGRESSION: Valid Registration Test Case: Validation of color filter options Check color Green
+rspec ./spec/ProdFiltersValidation.rb:143 # REGRESSION: Valid Registration Test Case: Validation of color filter options Check color Yellow
+rspec ./spec/ProdFiltersValidation.rb:152 # REGRESSION: Valid Registration Test Case: Validation of color filter options Check color Pink
+rspec ./spec/ProdFiltersValidation.rb:165 # REGRESSION: Valid Registration Test Case: Validation of composition Check composition: Cotton
+rspec ./spec/ProdFiltersValidation.rb:173 # REGRESSION: Valid Registration Test Case: Validation of composition Check composition: Polyester
+rspec ./spec/ProdFiltersValidation.rb:181 # REGRESSION: Valid Registration Test Case: Validation of composition Check composition: Viscose
+rspec ./spec/ProdFiltersValidation.rb:193 # REGRESSION: Valid Registration Test Case: Validation of styles Check Styles: Casual
+rspec ./spec/ProdFiltersValidation.rb:200 # REGRESSION: Valid Registration Test Case: Validation of styles Check Styles: Dressy
+rspec ./spec/ProdFiltersValidation.rb:207 # REGRESSION: Valid Registration Test Case: Validation of styles Check Styles: Girly
+rspec ./spec/ProdFiltersValidation.rb:219 # REGRESSION: Valid Registration Test Case: Validation of properties and availability Check properties: Colorful Dress
+rspec ./spec/ProdFiltersValidation.rb:229 # REGRESSION: Valid Registration Test Case: Validation of properties and availability Check properties: Maxi Dress
+rspec ./spec/ProdFiltersValidation.rb:237 # REGRESSION: Valid Registration Test Case: Validation of properties and availability Check properties: Midi Dress
+rspec ./spec/ProdFiltersValidation.rb:245 # REGRESSION: Valid Registration Test Case: Validation of properties and availability Check properties: Short Dress
+rspec ./spec/ProdFiltersValidation.rb:252 # REGRESSION: Valid Registration Test Case: Validation of properties and availability Check properties: Short Sleeve
+rspec ./spec/ProdFiltersValidation.rb:260 # REGRESSION: Valid Registration Test Case: Validation of properties and availability Check Availability: In stock
+rspec ./spec/ProdFiltersValidation.rb:272 # REGRESSION: Valid Registration Test Case: Validation of manufacturer and condition Check manufacturer: Fashion Manufacturer
+rspec ./spec/ProdFiltersValidation.rb:282 # REGRESSION: Valid Registration Test Case: Validation of manufacturer and condition Check Condition: New
+
