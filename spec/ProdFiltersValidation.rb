@@ -3,7 +3,7 @@ require 'rspec'
 require 'watir'
 require 'elements/FilterObjects'
 
-#VALUES BY FILTER
+#VALUES BY FILTER placed in the sidebar
 
 TOPS = 2          #number of TOPS
 DRESSES = 5       #number of DRESSES
@@ -33,7 +33,7 @@ STOCK = 7         #availability in stock
 MANUFACTURER = 7  #manufacturer
 COND = 7          #new products
 
-describe 'REGRESSION: Valid Registration Test Case:' do
+describe 'REGRESSION: Validation of sidebar filters:' do
 
     before :all do
         @browser = Watir::Browser.new:chrome

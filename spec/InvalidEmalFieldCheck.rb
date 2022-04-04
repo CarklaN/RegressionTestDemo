@@ -3,10 +3,13 @@ require 'watir'
 require 'roo'
 require 'elements/Objects'
 
+#Sign in page, first step for registration process-sending all emails previously written in excel file
+#Usage of gem 'roo'
+
 CREATION_URL='http://www.automationpractice.com/index.php?controller=authentication&back=my-account#account-creation'
 URL='http://www.automationpractice.com/index.php?controller=authentication&back=my-account'
 
-describe 'Smoke Test Cases: ' do
+describe 'Importing emails for sign-up from excel file ' do
     before :all do
         
         @browser = Watir::Browser.new:chrome

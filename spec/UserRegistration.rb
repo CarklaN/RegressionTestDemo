@@ -16,7 +16,6 @@ describe 'REGRESSION: Valid Registration Test Case:' do
     end
 
     context 'Fill Registration form' do
-
      
         it 'Submit valid email' do 
             RegObjects.send_email(@browser, "nikkollaa4@klak.rss")
@@ -103,4 +102,5 @@ describe 'REGRESSION: Valid Registration Test Case:' do
         end
 
     end
+    
 end

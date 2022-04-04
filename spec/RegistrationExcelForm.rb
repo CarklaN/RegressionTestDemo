@@ -3,6 +3,8 @@ require 'watir'
 require 'roo'
 require '/elements/RegObjects'
 
+#Workflow of registration, implementation of 'roo' gem and usage of data from excel file
+
 data = Roo::Spreadsheet.open('./spec/data/RegistrationForm.xlsx')
 rowCount = data.last_row
 

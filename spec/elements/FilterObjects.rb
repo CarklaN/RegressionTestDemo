@@ -1,5 +1,7 @@
 class FilterObjects
 
+#Elements and methods on list of products page, dropdown menu in the sidebar and filters in the sidebar
+
 	def self.startPage(driver)
 		driver.a(title: "Women").click
 	end

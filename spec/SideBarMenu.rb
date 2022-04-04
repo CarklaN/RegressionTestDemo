@@ -2,6 +2,8 @@ require 'rspec'
 require 'watir'
 require 'elements/FilterObjects'
 
+#Automation of sidebar dropdown menu usage, comparing actual url after clicking vs expected result
+
 WOMEN_URL='http://automationpractice.com/index.php?id_category=3&controller=category'
 TOPS_URL='http://automationpractice.com/index.php?id_category=4&controller=category'
 TSHIRTS_URL='http://automationpractice.com/index.php?id_category=5&controller=category'

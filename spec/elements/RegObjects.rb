@@ -1,5 +1,7 @@
 class RegObjects
 
+#Necessary elements and methods for registration process
+
 @name=""
 @surname=""
 @email=""

@@ -1,5 +1,7 @@
 class Objects
 
+#Elements for purchase workflow
+
 # Sign in button
 def self.click_sign_in(driver)
   driver.a(class:'login').click
