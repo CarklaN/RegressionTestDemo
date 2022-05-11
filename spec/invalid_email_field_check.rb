@@ -1,7 +1,8 @@
 require 'rspec'
 require 'watir'
+require 'helper'
 require 'roo'
-require 'elements/Objects'
+require 'page_elements/objects'
 
 #Sign in page, first step for registration process-sending all emails previously written in excel file
 #Usage of gem 'roo'
@@ -10,31 +11,26 @@ CREATION_URL='http://www.automationpractice.com/index.php?controller=authenticat
 URL='http://www.automationpractice.com/index.php?controller=authentication&back=my-account'
 
 describe 'Importing emails for sign-up from excel file ' do
-    before :all do
-        
-        @browser = Watir::Browser.new:chrome
-        @browser.window.maximize
-        @browser.goto(URL)
-        sleep 5
-    end
-
-    after :all do
-        @browser.close
-    end
+    
+    let(:actions) {@main.methods}
 
     context 'Email invalid format check' do
 
         data = Roo::Spreadsheet.open('./spec/data/proba.xlsx')
         rowCount = data.last_row
 
-        it 'fill invalid data from excel Spreadsheet' do 
+        it 'Click on Sign in button' do 
+            actions.click_sign_in
+        end
+
+        it 'Fill invalid data from excel Spreadsheet' do 
 
         for i in 2..rowCount do
            
             input=data.cell('A',i).to_s
-            Objects.send_email(@browser, input);
+            actions.send_email(input);
             sleep 2
-            Objects.createAccButton(@browser)
+            actions.createAccButton
             sleep 3
             
             if(@browser.url != CREATION_URL)
